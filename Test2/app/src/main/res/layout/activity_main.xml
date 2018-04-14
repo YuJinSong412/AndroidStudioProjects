@@ -14,17 +14,16 @@
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:onClick="onButtonClicked"
-        android:text="이미지 바꾸기"
+        android:onClick="onButton1Clicked"
+        android:text="이미지 변신"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
-        android:layout_width="355dp"
-        android:layout_height="396dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="338dp"
+        android:layout_height="338dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button">
 
@@ -42,4 +41,5 @@
             android:visibility="invisible"
             app:srcCompat="@drawable/yujin" />
     </FrameLayout>
+
 </android.support.constraint.ConstraintLayout>
