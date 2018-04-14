@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     int index = 0;
 
+    //boolean index = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,5 +38,15 @@ public class MainActivity extends AppCompatActivity {
             imageView2.setVisibility(View.VISIBLE);
         }
 
+        /*  if (index) {
+                imageView.setVisibility(View.VISIBLE);
+                imageView2.setVisibility(View.INVISIBLE);
+                index = false;
+            } else {
+                imageView.setVisibility(View.INVISIBLE);
+                imageView2.setVisibility(View.VISIBLE);
+                index =true;
+            }
+            */
     }
 }
