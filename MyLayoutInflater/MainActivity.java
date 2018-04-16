@@ -1,0 +1,30 @@
+package org.techtown.mylayoutinflater;
+
+import android.content.Context;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.Button;
+import android.widget.FrameLayout;
+
+public class MainActivity extends AppCompatActivity {
+
+    FrameLayout container;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        container = (FrameLayout) findViewById(R.id.container);
+
+        Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                LayoutInflater layoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                layoutInflater.inflate(R.layout.sub1,container, true);  //true는 바로 붙여달라는 뜻!,객체화 시킬 수 있다. sub1을 어느뷰에 붙여줄것인가!
+            }
+        });
+    }
+}
