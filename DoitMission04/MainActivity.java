@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     EditText editText;
     TextView textView;
 
+    int length =0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
         editText = (EditText) findViewById(R.id.editText2);
         textView = (TextView) findViewById(R.id.textView2);
+
+        textView.setText(editText.getText().length()+"/80 바이트");
     }
 
     public void onButton1Clicked(View v){
